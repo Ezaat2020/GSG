@@ -41,10 +41,12 @@ body {
     font-weight: bold;
     border-radius: 5px;
     border: none;
-    color: rgb(2, 18, 23);
+    color: rgb(176, 198, 204);
     padding: 4px 8px;
     margin-left: 4px;
-    cursor: pointer;  }
+    cursor: pointer;
+    background-color: rgb(5, 8, 9);
+}
   #active-alarm {
     display: none;
   }
@@ -54,7 +56,7 @@ body {
   }
   div #current-time {
     font-family: 'Orbitron', sans-serif;
-    font-size: 8vw;
+    font-size: 100px;
     background-image: linear-gradient(180deg,
         rgb(95, 109, 133) 0%,
         rgb(34, 54, 73) 50%,
