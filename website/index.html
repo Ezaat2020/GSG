@@ -95,7 +95,7 @@
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {msg.innerHTML="Message sent successfully"
+        .then(response => {msg.innerHTML="We had recevied your Message"
     setTimeout(function(){msg.innerHTML=""})
     },6000)
     form.reset()
