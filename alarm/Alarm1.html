@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Alarm1.css">
+    <title>Alarm Clock</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Current Time</h1>
+      <div id="current-time"></div>
+      <div class="create-alarm">
+        <div>Set Alarm</div>
+        <div class="form-actions">
+          <form>
+            <div class="alarm-inputs">
+              <input
+                type="number"
+                name="hour"
+                placeholder="&nbsp;&nbsp; Hours"
+                min="0"
+                max="12"
+                required
+              />
+              <input
+                type="number"
+                name="min"
+                min="0"
+                max="60"
+                placeholder="&nbsp;&nbsp; Minutes"
+                required
+              />
+              <input
+                type="number"
+                name="sec"
+                min="0"
+                max="60"
+                placeholder="&nbsp;&nbsp; Seconds"
+                required
+              />
+              <select name="AM/PM" required>
+                <option value="" selected disabled>AM/PM</option>
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+              </select>
+            </div>
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="active-alarm">
+      <div id="alarm-text"></div>
+      <button id="clear-alarm">Clear Alarm</button>
+    </div>
+    <audio id="alarm-audio"></audio>
+    <script src="Alarm1.js"></script>
+  </body>
+</html>

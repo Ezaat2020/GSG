@@ -1,0 +1,67 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(180deg,
+    rgb(195, 208, 231) 0%,
+    rgb(110, 147, 184) 50%,
+    rgb(55, 91, 104) 100%);
+  }
+  #current-time {
+    font-size: 32px;
+  }
+  #current-time,
+  .create-alarm,
+  h1,
+  #active-alarm {
+    text-align: center;
+  }
+  .create-alarm,
+  .alarm-inputs,
+  #active-alarm {
+    margin-top: 20px;
+    color: rgb(2, 18, 23);
+  }
+  input {
+    width: 100px;
+    height: 30px;
+    border-radius: 30%;
+    border: 2px;
+    color: rgb(16, 88, 88);
+    justify-content: end;
+  }
+  .alarm-inputs,
+  #alarm-text {
+    margin-bottom: 30px;
+  }
+  button {
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: rgb(2, 18, 23);
+    padding: 4px 8px;
+    margin-left: 4px;
+    cursor: pointer;  }
+  #active-alarm {
+    display: none;
+  }
+  ::placeholder {
+   justify-content:center;
+   color:rgb(16, 88, 88);
+  }
+  div #current-time {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15vw;
+    background-image: linear-gradient(180deg,
+        rgb(95, 109, 133) 0%,
+        rgb(34, 54, 73) 50%,
+        rgb(5, 8, 9) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
