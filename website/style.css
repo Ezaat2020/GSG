@@ -163,6 +163,10 @@ nav ul li a:hover::after{
  #msg {
     color:#969595;
     font-size: 14px;
+    margin-top: 10px;
+    margin-left: 50%;
+    justify-items: center;
+    align-items: center;
 }
 /* code for responsive design ---------------------------------------------------------------- --*/
     @media only screen and (max-width: 600px) {

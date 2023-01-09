@@ -74,7 +74,7 @@
                 <textarea name="Message" rows="6" placeholder =" Your Message"></textarea>
                 <button type="submit" value="send"> Submit</button>
         </form>
-        <span id="msg" >done</span>
+        <span id="msg">done</span>
      <div>
         <span> 📞+972-0597978029</span>
      </div> 
@@ -90,11 +90,15 @@
  <script>
     const scriptURL = '<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTuJMp7JI6LlZ_A1c0Go2QQ0iVxOpTaKVhOal_vUc8xI07eo_wGL5WM1dm87Ilp_sU9U2hddHicyF4B/pubhtml?widget=true&amp;headers=false"></iframe>'
     const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
   
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        .then(response => {msg.innerHTML="Message sent successfully"
+    setTimeout(function(){msg.innerHTML=""})
+    },6000)
+    form.reset()
         .catch(error => console.error('Error!', error.message))
     })
   </script>
