@@ -54,7 +54,7 @@ body {
   }
   div #current-time {
     font-family: 'Orbitron', sans-serif;
-    font-size: 12vw;
+    font-size: 10vw;
     background-image: linear-gradient(180deg,
         rgb(95, 109, 133) 0%,
         rgb(34, 54, 73) 50%,
