@@ -158,8 +158,12 @@ nav ul li a:hover::after{
  #contact div span{
     margin-left: 0px;
     margin-top: 10%;
-    color: #d7dbda;
+    color: #d7dbda;   
  }
+ #msg {
+    color:#969595;
+    font-size: 14px;
+}
 /* code for responsive design ---------------------------------------------------------------- --*/
     @media only screen and (max-width: 600px) {
         nav ul li{
