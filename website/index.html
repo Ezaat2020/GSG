@@ -97,7 +97,7 @@
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {msg.innerHTML="We had recevied your Message"
     setTimeout(function(){msg.innerHTML=""})
-    },6000)
+    },60000)
     form.reset()
         .catch(error => console.error('Error!', error.message))
     })
